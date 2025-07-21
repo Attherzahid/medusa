@@ -1,0 +1,25 @@
+.text-white {
+  color: white !important;
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-black {
+  background: black;
+}
+
+// Primary Colors
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}

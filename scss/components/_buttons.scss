@@ -1,0 +1,63 @@
+.btn {
+  font-size: clamp(16px, 2vw, 18px);
+  padding: clamp(16px, 2vw, 18px) clamp(20px, 2vw, 30px);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  font-weight: 700;
+  position: relative;
+  max-width: fit-content;
+  text-transform: capitalize;
+  overflow: hidden;
+  border-radius: 8px;
+  letter-spacing: 4px;
+  position: relative;
+  .custom-border {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: #000000;
+    background: linear-gradient(
+        352deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(48, 172, 255, 0.5) 100%
+      )
+      border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background: #b9b8eb;
+  background: linear-gradient(0deg, #657ef3 0%, rgba(58, 84, 248, 1) 100%);
+  box-shadow: inset 0px 0px 6px #fface381;
+}
+
+.btn-secondary {
+  color: #fff;
+  background: #ed9292;
+  background: linear-gradient(0deg, rgba(237, 146, 146, 0.1) 60%, rgba(200, 228, 254, 0.3) 100%);
+  border: 1px solid #fff;
+}
