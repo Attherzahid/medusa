@@ -245,6 +245,13 @@
             .card {
                 background-color: #1b1a64;
                 min-height: 356px;
+                .icon-wrapper {
+                    &.icon-1 {
+                        svg {
+                            
+                        }
+                    }
+                }
             }
         }
     }
@@ -311,7 +318,7 @@
                     position: relative;
                     max-width: fit-content;
                     margin: 0 auto 20px;
-                    padding: clamp(14px, 2vw, 20px) clamp(20px, 2vw, 30px);
+                    padding: clamp(14px, 2vw, 18px) clamp(20px, 2vw, 30px);
                     background: #000000;
                     background: linear-gradient(0deg, rgba(#010052, 0) 0%, rgba(#b9b8eb, 0.2) 100%);
                     box-shadow: inset 0px 0px 10px #fface341;
