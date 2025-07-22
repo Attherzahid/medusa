@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 99999;
@@ -8,11 +8,6 @@
   .logo {
     max-width: 222px;
     height: auto;
-  }
-  &.active {
-    background-color: rgba(#fff, 0.05);
-    backdrop-filter: blur(16px);
-    padding: 16px 0;
   }
   .navbar {
     display: flex;
@@ -23,7 +18,13 @@
 @media (max-width: 768px) {
   .header {
     .logo {
-      max-width: 140px;
+      max-width: 160px;
+    }
+    .btn {
+      display: none;
+    }
+    .navbar {
+      justify-content: center;
     }
   }
 }

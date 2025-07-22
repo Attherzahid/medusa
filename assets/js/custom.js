@@ -1,17 +1,4 @@
 jQuery(document).ready(function () {
-  if (window.innerWidth <= 991) {
-    jQuery(".header").addClass("active");
-  } else {
-    jQuery(window).scroll(function () {
-      var scroll = jQuery(window).scrollTop();
-
-      if (scroll >= 100) {
-        jQuery(".header").addClass("active");
-      } else {
-        jQuery(".header").removeClass("active");
-      }
-    });
-  }
 
   $(".tab-nav li").click(function () {
     var tab_id = $(this).attr("data-tab");
@@ -43,5 +30,7 @@ jQuery(document).ready(function () {
     slidesToShow: 1,
     variableWidth: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000
   });
 });
