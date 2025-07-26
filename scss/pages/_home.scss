@@ -116,6 +116,7 @@
             height: 825px;
             background-size: contain;
             background-image: url("./../../assets/img/content-sec-obj.webp");
+            background-repeat: no-repeat;
             z-index: -1;
         }
         .img-wrapper {
@@ -172,6 +173,7 @@
         top: 0;
         background-size: contain;
         background-image: url("./../../assets/img/step-sec-obj.webp");
+        background-repeat: no-repeat;
         z-index: -1;
     }
     .content-warpper {
@@ -281,6 +283,7 @@
         .tab-nav {
             display: flex;
             list-style: none;
+            justify-content: center;
             flex-wrap: wrap;
             padding: 4px;
             border-radius: 32px;
@@ -565,8 +568,9 @@
                 }
                 .card {
                     .icon-wrapper {
-                        svg {
+                        img {
                             max-width: 80px;
+                            height: auto    ;
                         }
                     }
                     min-height: 436px;
